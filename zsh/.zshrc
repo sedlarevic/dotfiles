@@ -108,37 +108,7 @@ path=(
 if [ -r "$HOME/.local_env" ]; then
     source "$HOME/.local_env"
 fi
-# ============================================================
-# Ruby
-# ============================================================
-
-if (( $+commands[rbenv] )); then
-  eval "$(rbenv init - --no-rehash zsh)"
-fi
-
-
-# ============================================================
-# Conda — conda init
-# ============================================================
-
-# >>> conda initialize >>>
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
-
-if [[ $? -eq 0 ]]; then
-  eval "$__conda_setup"
-elif [[ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]]; then
-  source "/opt/miniconda3/etc/profile.d/conda.sh"
-else
-  path=(
-    "/opt/miniconda3/bin"
-    $path
-  )
-fi
-
-unset __conda_setup
-# <<< conda initialize <<<
-
-
+#
 # ============================================================
 # Powerlevel10k config — leave at the bottom
 # ============================================================
