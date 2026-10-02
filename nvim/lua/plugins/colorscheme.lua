@@ -19,8 +19,8 @@ return {
         -- let Treesitter distinguish Go numbers from rune literals
         hl["@lsp.type.number.go"] = {}
 
-        hl["@number"] = { fg = c.rust }
-        hl["@number.float"] = { fg = c.rust }
+        hl["@number"] = { fg = c.red_faint }
+        hl["@number.float"] = { fg = c.red_faint }
 
         hl["@character"] = { fg = c.blue_warmer }
         hl["@string.go"] = { fg = c.blue_warmer }
