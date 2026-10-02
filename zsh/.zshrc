@@ -15,6 +15,12 @@ unset zap_file
 export CLICOLOR=1
 export LSCOLORS="cxfxdxdxbxexexbxbxcxcx"
 
+zstyle ':completion:*' list-colors \
+  'di=32' \
+  'ln=35' \
+  'ex=31' \
+  'ma=38;5;208'
+
 # git prompt
 
 ZSH_GIT_PROMPT_SHOW_TRACKING_COUNTS=1
