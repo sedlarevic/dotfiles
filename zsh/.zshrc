@@ -13,7 +13,7 @@ unset zap_file
 # ls colors
 
 export CLICOLOR=1
-export LSCOLORS="ExGxDxDxbxExExbxbxExEx"
+export LSCOLORS="cxfxdxdxbxexexbxbxcxcx"
 
 # git prompt
 
